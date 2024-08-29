@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* *{
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* shaking button animation */
+/* Define the vibration animation */
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+
+/* Apply the hover effect to the element */
+.element {
+  display: inline-block;
+  /* Any other styling for your element */
+  transition: all 0.3s ease;
+}
+
+.element:hover {
+  animation: vibrate 0.2s linear infinite;
+}
+
+
+
+/* for scrolling smoothly */
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+.dark{
+  background-color: #160303;
+  color: white;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
