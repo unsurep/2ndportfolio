@@ -2,11 +2,8 @@
 
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { BsBrightnessHighFill } from "react-icons/bs";
-import { FaMoon } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+
+
 
 
 const Navbar=({toggleDarkMode, isDark})=>{
@@ -59,7 +56,7 @@ const Navbar=({toggleDarkMode, isDark})=>{
     }
 
 
-    // lg:bg-red-300 xl:bg-blue-300
+   
 
     return(
         <div className="">
@@ -69,15 +66,10 @@ const Navbar=({toggleDarkMode, isDark})=>{
 
                     <h1 className="font-bold text-xl text-white"><span className="text-blue-800">Louis</span> Umukoro</h1>
 
-                    {/* toogle day and night */}
-                    {/* <div onClick={toggleDarkMode} className="flex items-center cursor-pointer text-white">
-                        {isDark===true ? <p><BsBrightnessHighFill /></p>: <p><FaMoon /></p> }
-                    </div> */}
+                  
                 </div>
 
-                {/* <div className=" lg:hidden ">
-                    <p><GiHamburgerMenu /></p>
-                </div> */}
+             
 
 
                 <ul className="hidden md:hidden lg:flex items-center gap-10 ">
